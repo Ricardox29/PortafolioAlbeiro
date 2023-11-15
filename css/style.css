@@ -102,20 +102,25 @@ body .title {
 }
 
 body #mas-sobremi{
+    width: 100%;
+    height: 125.20rem;
+}
+
+body .containersobremi{
     position: relative;
     width: 55%; 
     margin: auto;
 }
 
-body #mas-sobremi::after{
+body #acercaDeMi::after{
     content: "";
     position: absolute;
     left: 32%;
     width: .40rem;
-    height: 30.20%;
+    height: 123.20%;
     background-color:#eed00c;
     z-index: 9;
-    top: 7.05%;
+    top: 0%;
 }
 
 body #acercaDeMi{
@@ -325,9 +330,15 @@ body .texto4{
 
 /* Carousel */
 
-/* body #carousel{
+body #misProyectos{
+    position: absolute;
+    width: 90%;
+    top: 80%;
+}
+
+body .card{
     
-} */
+}
 
 /* TABLET */
 @media screen and (min-width:768px) and (max-width:1024px){
