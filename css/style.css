@@ -1,0 +1,340 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #333233;
+}
+
+body, a {
+    cursor: url(../img/fusil-de-asalto.png) 0 20, auto;
+}
+
+body #encabezado .contEncabezado{
+    width: 100%;
+    height: 41rem;
+    background: radial-gradient(circle at 100% 100%, #11161a 10%,#393817,#eed00c);
+}
+
+body .contEncabezado{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #d9d9d9;
+    padding: 20rem;
+    
+}
+
+body .navbar {
+    background: linear-gradient(to left, #11161a 12%,#393817 60%,#eed00c);
+    height: 5rem;
+    font-size: 1.5rem;
+}
+
+body .navbar-nav .nav-link {
+    color: #d9d9d9;
+}
+
+body #Perfil-profecional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body .espaciotexto{
+    position: relative;
+    width: 73%;
+    margin-top: 5rem;
+}
+
+body .textoperfil{
+    position: relative;
+    background-color: #191E24;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 3rem 3rem;
+    padding: 2rem;
+}
+
+body .textoperfil:hover{
+    box-shadow: 10px 10px 30px 5px #eed00c;
+}
+
+body .espaciotexto::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 3rem;
+    height: 80%;
+    background-color: #eed00c;
+    z-index: 9;
+    top: 0%;
+}
+
+body .espaciotexto::before{
+    content: "";
+    position: absolute;
+    left: 4%;
+    width: 86%;
+    height: 8.10%;
+    background-color: #eed00c;
+    z-index: 9;
+    top: 0%;
+}
+
+body .textoperfil h2{
+    margin: 1.50rem 0;
+}
+
+body .title {
+    margin: 4rem 0;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body #mas-sobremi{
+    position: relative;
+    width: 55%; 
+    margin: auto;
+}
+
+body #mas-sobremi::after{
+    content: "";
+    position: absolute;
+    left: 32%;
+    width: .40rem;
+    height: 30.20%;
+    background-color:#eed00c;
+    z-index: 9;
+    top: 7.05%;
+}
+
+body #acercaDeMi{
+    position: relative;
+}
+
+body .contenedor1{
+    position: relative;
+    padding: 0;
+    padding-right: .40rem;
+}
+
+body .contenedor2{
+    position: relative;
+    top: 50px;
+    padding: 0;
+}
+
+body .title1 {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eed00c;
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+body .imagen1{
+    height: 10rem;
+    position: relative;
+    top: 10%;
+    background-color: #191E24;
+}
+
+body .texto1{
+    height: 14rem;
+    position: relative;
+    top: 10%;
+    border-bottom: .40rem solid #eed00c;
+    background-color: #ffffff;    
+}
+
+
+body #miEnfoque{
+    position: relative
+}
+
+body #miEnfoque::after{
+    content: "";
+    position: absolute;
+    right:  32.08%;
+    width: .40rem;
+    height: 136.70%;
+    background-color: #eed00c;
+    z-index: 9;
+    top: 23.30%;
+}
+
+body .contenedor3{
+    position: relative;
+    padding: 0;
+    top: 5.50rem;
+    padding-left: .40rem;
+}
+
+body .contenedor4{
+    position: relative;
+    top: 11rem;
+    padding: 0;
+}
+
+body .title2 {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eed00c;
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+body .imagen2{
+    height: 7rem;
+    position: relative;
+    top: 10%;
+    background-color: #191E24;
+}
+
+body .texto2{
+    height: 15rem;
+    position: relative;
+    top: 10%;
+    border-bottom: .40rem solid #eed00c;
+    background-color: #ffffff;    
+}
+
+body #misHabilidades{
+    position: relative
+}
+
+body #misHabilidades::after{
+    content: "";
+    position: absolute;
+    left:  32.08%;
+    width: .40rem;
+    height: 30.35rem;
+    background-color: #eed00c;
+    z-index: 9;
+    top: 56.20%;
+}
+
+body .contenedor5{
+    position: relative;
+    padding: 0;
+    top: 13rem;
+    padding-right: .40rem;
+}
+
+body .contenedor6{
+    position: relative;
+    top: 18rem;
+    padding: 0;
+}
+
+body .title3 {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eed00c;
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+body .imagen3{
+    height: 8rem;
+    position: relative;
+    top: 10%;
+    background-color: #191E24;
+}
+
+body .texto3{
+    height: 15rem;
+    position: relative;
+    top: 10%;
+    border-bottom: .40rem solid #eed00c;
+    background-color: #ffffff;    
+}
+
+body #educacion{
+    position: relative
+}
+
+body #educacion::after{
+    content: "";
+    position: absolute;
+    right:  32.08%;
+    width: .40rem;
+    height: 132.50%;
+    background-color: #eed00c;
+    z-index: 9;
+    top: 91%;
+}
+
+body .contenedor7{
+    position: relative;
+    padding: 0;
+    top: 25rem;
+}
+
+body .contenedor8{
+    position: relative;
+    top: 20rem;
+    padding: 0;
+    padding-left: .40rem;
+}
+
+body .title4 {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eed00c;
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+body .imagen4{
+    height: 8rem;
+    position: relative;
+    top: 10%;
+    background-color: #191E24;
+}
+
+body .texto4{
+    height: 15rem;
+    position: relative;
+    top: 10%;
+    border-bottom: .40rem solid #eed00c;
+    background-color: #ffffff;    
+}
+
+/* Carousel */
+
+/* body #carousel{
+    
+} */
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:1024px){
+    
+}
+
+/* SMARTPHONE */
+@media screen and (min-width:320px) and (max-width:600px){
+    
+}
