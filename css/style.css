@@ -1,13 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Kanit', sans-serif;
     /* box-sizing: border-box; */
-}
-
-h2 {
-    col
 }
 
 body{
@@ -174,6 +171,10 @@ body .texto1{
     background-color: #ffffff;    
 }
 
+body .texto1 p {
+    padding: 1rem;
+    font-size: 30px;
+}
 
 body #miEnfoque{
     position: relative
@@ -227,6 +228,11 @@ body .texto2{
     top: 10%;
     border-bottom: .40rem solid #eed00c;
     background-color: #ffffff;    
+}
+
+body .texto2 p {
+    padding: 8px 1rem;
+    font-size: 23px;
 }
 
 body #misHabilidades{
@@ -283,6 +289,11 @@ body .texto3{
     background-color: #ffffff;    
 }
 
+body .texto3 p {
+    padding: 8px 1rem;
+    font-size: 20px;
+}
+
 body #educacion{
     position: relative
 }
@@ -292,10 +303,10 @@ body #educacion::after{
     position: absolute;
     right:  32.08%;
     width: .40rem;
-    height: 132.50%;
+    height: 130.70%;
     background-color: #eed00c;
     z-index: 9;
-    top: 91%;
+    top: 88%;
 }
 
 body .contenedor7{
@@ -335,6 +346,11 @@ body .texto4{
     top: 10%;
     border-bottom: .40rem solid #eed00c;
     background-color: #ffffff;    
+}
+
+body .texto4 p {
+    padding: 8px 1rem;
+    font-size: 21px;
 }
 
 /* Mis proyectos */
@@ -419,14 +435,28 @@ body #mis-proyectos{
 /* Carousel */
 
 .containercarousel{
-    margin-top: 5rem;
+    margin: 5rem;
     width: 90%;
     margin-left: 5rem;
 }
 
 /* Footer */
 
+#pie-pagina {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+
+
+footer img {
+    display: inline-block;
+    max-width: 5rem;
+    max-height: 5rem;
+    margin: 1rem;
+}
 
 /* TABLET */
 @media screen and (min-width:768px) and (max-width:1024px){
