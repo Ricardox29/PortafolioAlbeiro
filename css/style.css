@@ -227,7 +227,8 @@ body .texto2{
     position: relative;
     top: 10%;
     border-bottom: .40rem solid #eed00c;
-    background-color: #ffffff;    
+    background-color: #ffffff;   
+    font-size: 10%;
 }
 
 body .texto2 p {
@@ -449,31 +450,74 @@ body #mis-proyectos{
 
 /* TABLET */
 @media screen and (min-width:768px) and (max-width:1024px){
-    .contenidoEncabezado .texto{
-        position: absolute;
-        top: -22%;
-        margin-left: 7rem;
-        display: flex;
-        align-items: center;
-    }
+    @media screen and (min-width:768px) and (max-width:1000px){
+        .contenidoEncabezado .texto h2{
+            position: absolute;
+            top: 22%;
+            margin-left: 7rem;
+            align-items: center;
+            height: 50px;
+        }
+        
+        .parte2, .parte1{
+            width: 50%;
+            flex-wrap: wrap;
+        }
+    
+        .img-albeiro img {
+            max-width: 20rem;
+        }
+    
+        body .espaciotexto::before{
+            content: "";
+            position: absolute;
+            left: 4%;
+            width: 86%;
+            height: 13.90%;
+            background-color: #eed00c;
+            z-index: 9;
+            top: 0%;
+        }
+    
+        p {
+            font-size: 10px;
+        }
+    
+        body .containersobremi{
+            position: relative;
+            width: 70%; 
+            margin: auto;
+        }
+    
+        .imagen1, 
+        .imagen2, 
+        .imagen3,
+        .imagen4{
+            display: none;
+        }
+    
+        body #acercaDeMi::after,
+        body #miEnfoque::after,
+        body #misHabilidades::after,
+        body #educacion::after {
+            display: none;
+        }
+    
+        /* .contenedor2,
+        .contenedor4,
+        .contenedor6,
+        .contenedor7 {
+        
+        } */
 
-    .img-albeiro img {
-        max-width: 20rem;
-    }
-
-    body .espaciotexto::before{
-        content: "";
-        position: absolute;
-        left: 4%;
-        width: 86%;
-        height: 6.10%;
-        background-color: #eed00c;
-        z-index: 9;
-        top: 0%;
-    }
-
-    p {
-        font-size: 10px;
+        .contenedor1,
+        .contenedor3,
+        .contenedor5,
+        .contenedor7{
+            position: absolute;
+            top: 0;
+        }
+        
     }
 }
 
