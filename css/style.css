@@ -2,7 +2,12 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* box-sizing: border-box; */
+}
+
+h2 {
+    col
 }
 
 body{
@@ -18,18 +23,22 @@ body, a {
 
 body #encabezado .contEncabezado{
     width: 100%;
-    height: 41rem;
+    /* height: 41rem; */
     background: radial-gradient(circle at 100% 100%, #11161a 10%,#393817,#eed00c);
 }
 
-body .contEncabezado{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: #d9d9d9;
-    padding: 20rem;
-    
+body .contenidoEncabezado{
+    width: 80%;
+    margin: auto;
+    color: #d9d9d9;    
 }
+
+body #encabezado .texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18rem;
+} 
 
 body .navbar {
     background: linear-gradient(to left, #11161a 12%,#393817 60%,#eed00c);
@@ -330,9 +339,92 @@ body .texto4{
 
 /* Mis proyectos */
 
+body #mis-proyectos{
+    width: 100%;
+    position: relative;
+    padding: 0
+}
 
+.titleproyectos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.titleproyectos h2{
+    color: #ffffff;
+    font-size: 36px;
+    display: inline-block;
+    margin: 3rem;
+}
+
+.titleproyectos h2 spam{
+    font-size: 54px;
+
+}
+
+.containerproyectos {
+    width: 80%;
+    margin-left: 8rem;
+}
+
+.center {
+    width: auto;
+}
+
+.card-proyectos {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 30px; 
+    border: 10px #eed00c;
+}
+
+.card-proyectos:after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    content: " ";
+    /* background: #0024ef3a; */
+    transition: .5s;
+}
+
+.card-proyectos a{
+    color: #ffff;
+    font-weight: 700px;
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 240px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.card-proyectos:hover a {
+    background: #ffffffff;
+    color: rgb(44, 115, 154);
+    bottom: 48%;
+}
 
 /* Carousel */
+
+.containercarousel{
+    margin-top: 5rem;
+    width: 90%;
+    margin-left: 5rem;
+}
+
+/* Footer */
 
 
 
