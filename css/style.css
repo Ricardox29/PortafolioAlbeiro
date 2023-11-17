@@ -261,6 +261,13 @@ body .contenedor6{
     position: relative;
     top: 18rem;
     padding: 0;
+
+    & img {
+        display: inline-block;
+        max-width: 5rem;
+        max-height: 5rem;
+        margin: 1rem;
+    }
 }
 
 body .title3 {
@@ -370,16 +377,10 @@ body #mis-proyectos{
 .titleproyectos h2{
     color: #ffffff;
     font-size: 36px;
-    display: inline-block;
     margin: 3rem;
 }
 
-.titleproyectos h2 spam{
-    font-size: 54px;
-
-}
-
-.containerproyectos {
+.containerproyectos{
     width: 80%;
     margin-left: 8rem;
 }
@@ -388,48 +389,17 @@ body #mis-proyectos{
     width: auto;
 }
 
-.card-proyectos {
+.card-proyectos img{
     position: relative;
     z-index: 1;
     cursor: pointer;
     margin-bottom: 30px;
     border-radius: 30px; 
-    border: 10px #eed00c;
+    border: 4px solid #eed00c;
 }
 
-.card-proyectos:after{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    content: " ";
-    /* background: #0024ef3a; */
-    transition: .5s;
-}
-
-.card-proyectos a{
-    color: #ffff;
-    font-weight: 700px;
-    font-size: 20px;
-    text-decoration: none;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 240px;
-    transition: 1s;
-    border-radius: 10px;
-}
-
-.card-proyectos:hover a {
-    background: #ffffffff;
-    color: rgb(44, 115, 154);
-    bottom: 48%;
+.card-proyectos:hover {
+    width: 104%;
 }
 
 /* Carousel */
@@ -444,23 +414,67 @@ body #mis-proyectos{
 
 #pie-pagina {
     width: 100%;
+}
+
+.redes-sociales {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    & a {
+        transition: 0.5s;
+    }
 }
 
+.redes-sociales a:hover{
+    transform: scale(1.1);
+}
 
-
-footer img {
+ footer img {
     display: inline-block;
     max-width: 5rem;
     max-height: 5rem;
     margin: 1rem;
 }
 
+
+
+.copyright {
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* TABLET */
 @media screen and (min-width:768px) and (max-width:1024px){
-    
+    .contenidoEncabezado .texto{
+        position: absolute;
+        top: -22%;
+        margin-left: 7rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .img-albeiro img {
+        max-width: 20rem;
+    }
+
+    body .espaciotexto::before{
+        content: "";
+        position: absolute;
+        left: 4%;
+        width: 86%;
+        height: 6.10%;
+        background-color: #eed00c;
+        z-index: 9;
+        top: 0%;
+    }
+
+    p {
+        font-size: 10px;
+    }
 }
 
 /* SMARTPHONE */
