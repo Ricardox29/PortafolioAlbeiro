@@ -37,14 +37,34 @@ body #encabezado .texto {
     margin-top: 18rem;
 } 
 
-body .navbar {
+nav {
     background: linear-gradient(to left, #11161a 12%,#393817 60%,#eed00c);
     height: 5rem;
     font-size: 1.5rem;
 }
 
-body .navbar-nav .nav-link {
+nav.bg-port ul li a {
     color: #d9d9d9;
+}
+
+nav.bg-port ul li a{
+    position: relative;
+}
+
+nav.bg-port ul li a::after{
+    position: absolute;
+    content: " ";
+    height: 5px;
+    width: 20%;
+    background: transparent;
+    bottom: 0;
+    left: 10px;
+    transition: 0.4s;
+}
+
+nav.bg-port ul li a:hover::after{
+    background: #000000;
+    width: 90%;
 }
 
 body #Perfil-profecional {
@@ -54,45 +74,29 @@ body #Perfil-profecional {
     text-align: center;
 }
 
-body .espaciotexto{
-    position: relative;
-    width: 73%;
-    margin-top: 5rem;
-}
-
 body .textoperfil{
     position: relative;
     background-color: #191E24;
     color: #ffffff;
     font-size: 2rem;
-    margin: 3rem 3rem;
+    margin-top: 5rem;
     padding: 2rem;
+    width: 70%;
 }
 
 body .textoperfil:hover{
     box-shadow: 10px 10px 30px 5px #eed00c;
 }
 
-body .espaciotexto::after{
-    content: "";
+body .textoperfil::after{
+    content: '';
     position: absolute;
-    left: 0%;
-    width: 3rem;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    top: -45px;
+    left: 40px;
     background-color: #eed00c;
-    z-index: 9;
-    top: 0%;
-}
-
-body .espaciotexto::before{
-    content: "";
-    position: absolute;
-    left: 4%;
-    width: 86%;
-    height: 8.10%;
-    background-color: #eed00c;
-    z-index: 9;
-    top: 0%;
+    z-index: -1;
 }
 
 body .textoperfil h2{
@@ -363,10 +367,10 @@ body .texto4 p {
 
 /* Mis proyectos */
 
-body #mis-proyectos{
+body #Mis-proyectos{
     width: 100%;
     position: relative;
-    padding: 0
+    padding: 100px 0;
 }
 
 .titleproyectos {
@@ -400,15 +404,15 @@ body #mis-proyectos{
 }
 
 .card-proyectos:hover {
-    width: 104%;
+    transform: scale(1.1);
 }
 
 /* Carousel */
 
 .containercarousel{
-    margin: 5rem;
     width: 90%;
     margin-left: 5rem;
+    padding-bottom: 80px;
 }
 
 /* Footer */
@@ -438,8 +442,6 @@ body #mis-proyectos{
     margin: 1rem;
 }
 
-
-
 .copyright {
     color: #d9d9d9;
     display: flex;
@@ -450,78 +452,91 @@ body #mis-proyectos{
 
 /* TABLET */
 @media screen and (min-width:768px) and (max-width:1024px){
-    @media screen and (min-width:768px) and (max-width:1000px){
-        .contenidoEncabezado .texto h2{
-            position: absolute;
-            top: 22%;
-            margin-left: 7rem;
-            align-items: center;
-            height: 50px;
-        }
-        
-        .parte2, .parte1{
-            width: 50%;
-            flex-wrap: wrap;
-        }
-    
-        .img-albeiro img {
-            max-width: 20rem;
-        }
-    
-        body .espaciotexto::before{
-            content: "";
-            position: absolute;
-            left: 4%;
-            width: 86%;
-            height: 13.90%;
-            background-color: #eed00c;
-            z-index: 9;
-            top: 0%;
-        }
-    
-        p {
-            font-size: 10px;
-        }
-    
-        body .containersobremi{
-            position: relative;
-            width: 70%; 
-            margin: auto;
-        }
-    
-        .imagen1, 
-        .imagen2, 
-        .imagen3,
-        .imagen4{
-            display: none;
-        }
-    
-        body #acercaDeMi::after,
-        body #miEnfoque::after,
-        body #misHabilidades::after,
-        body #educacion::after {
-            display: none;
-        }
-    
-        /* .contenedor2,
-        .contenedor4,
-        .contenedor6,
-        .contenedor7 {
-        
-        } */
 
-        .contenedor1,
-        .contenedor3,
-        .contenedor5,
-        .contenedor7{
-            position: absolute;
-            top: 0;
+        #encabezado .parte1 img{
+            width: 90%;
         }
-        
-    }
+
+        #encabezado .parte2 {
+            display: flex;
+        }
+    
+        #mas-sobremi .containersobremi{
+            width: 70%;
+            position: relative;
+        }
+
+        #mas-sobremi ::after{
+            display: none;
+        }
+
+        #mas-sobremi {
+            margin-bottom: 100px;
+        }
+
+        #mas-sobremi {
+
+            & .imagen1{
+                height: 80px;
+            }
+
+            & .contenedor1{
+                bottom: -11px;
+                padding: 0;
+            }
+
+            & .contenedor2{
+                top: -30px;
+            }
+
+            & .imagen2{
+                height: 80px;
+            }
+
+            & .contenedor3 {
+                top: -270px;
+                padding: 0;
+                width: 100%;
+            }
+
+            & .contenedor5{
+                top: 100px;
+                padding: 0;
+            }
+
+            & .contenedor6{
+                top: 60px;
+                margin-bottom: 70px;
+            }
+
+            & .contenedor8{
+                top: -230px;
+                padding: 0;
+            }
+
+            & .contenedor7{
+                top: 200px;
+            }
+
+            & .imagen4{
+                height: 80px;
+            }
+                
+            p {
+                font-size: 10px;
+            }
+        }
+
+        #Mis-proyectos {
+            padding-right: 100px;
+        }
+    
 }
 
 /* SMARTPHONE */
 @media screen and (min-width:320px) and (max-width:600px){
-    
+
+    body{
+        display: none;
+    }
 }
